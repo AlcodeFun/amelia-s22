@@ -24,10 +24,6 @@
     />
   </head>
   <body>
-    <audio autoplay="autoplay" hidden>
-      <source src="backsound.mp3" type="audio/mpeg" />
-    </audio>
-
     <div
       id="carouselContainer"
       style="
@@ -35,11 +31,21 @@
         width: 100vw;
         display: flex;
         align-items: center;
+        flex-direction: column;
         justify-content: center;
         opacity: 0; /* Hidden initially */
         transition: opacity 2s ease-in-out;
       "
     >
+      <audio autoplay="autoplay" controls autoplay>
+        <source src="backsound.mp3" type="audio/mpeg" />
+      </audio>
+      <div style="padding: 20px">
+        <p style="color: black; font-size: 14px; text-align: center">
+          nyalain dlu musicnya manual yah .Tadi dideploy gak bisa autoplay wkwk
+        </p>
+      </div>
+
       <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
           <div class="carousel-item active">
